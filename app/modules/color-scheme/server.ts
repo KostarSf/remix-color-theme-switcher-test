@@ -4,8 +4,6 @@ import { safeRedirect } from "remix-utils";
 
 import type { ColorScheme, CookieData } from "./types";
 
-export const COLOR_SCHEME_DEFAULT_ACTION = "/api/color-scheme";
-
 const cookie = createCookie("color-scheme", {
   maxAge: 34_560_000,
   sameSite: "lax",

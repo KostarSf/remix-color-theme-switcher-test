@@ -1,14 +1,9 @@
 import { Form, useLocation } from "@remix-run/react";
-import type { ReactNode } from "react";
 
 import { useInversedColorScheme } from "../hooks/useColorScheme";
-import { COLOR_SCHEME_DEFAULT_ACTION } from "../server";
+import type { ToggleColorSchemeFormProps } from "../types";
 
-type ToggleColorSchemeFormProps = {
-  children?: ReactNode;
-  className?: string;
-  action?: string;
-};
+/** Make POST on /api/color-scheme by default */
 export const ToggleColorSchemeForm = ({
   children,
   className,
@@ -20,7 +15,7 @@ export const ToggleColorSchemeForm = ({
   return (
     <Form
       method="POST"
-      action={action || COLOR_SCHEME_DEFAULT_ACTION}
+      action={action || '/api/color-scheme'}
       preventScrollReset
       className={className}
     >
