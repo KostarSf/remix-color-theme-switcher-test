@@ -1,4 +1,5 @@
 import { useMatches, useNavigation } from "@remix-run/react";
+
 import type { ColorScheme } from "../types";
 
 export const useColorScheme = (): ColorScheme => {
@@ -12,3 +13,7 @@ export const useColorScheme = (): ColorScheme => {
 
   return (optimistic || current || fallback) as ColorScheme;
 };
+
+export const useInversedColorScheme = (): ColorScheme => {
+  return useColorScheme() === 'dark' ? 'light' : 'dark'
+}

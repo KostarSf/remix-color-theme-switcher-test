@@ -9,11 +9,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+
 import { parseColorScheme, useColorScheme } from "./modules/color-scheme";
-import styles from "./tailwind.css";
+import tailwind from "./tailwind.css";
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: styles },
+  { rel: "stylesheet", href: tailwind },
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 

@@ -1,6 +1,7 @@
 import type { ActionFunction } from "@remix-run/node";
 import { createCookie, redirect } from "@remix-run/node";
 import { safeRedirect } from "remix-utils";
+
 import type { ColorScheme, CookieData } from "./types";
 
 export const COLOR_SCHEME_DEFAULT_ACTION = "/api/color-scheme";

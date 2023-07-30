@@ -1,6 +1,5 @@
 export { ToggleColorSchemeForm } from "./components/ToggleColorSchemeForm";
-export { useColorScheme } from "./hooks/useColorScheme";
-export { useInversedColorScheme } from "./hooks/useInversedColorScheme";
+export { useColorScheme, useInversedColorScheme } from "./hooks/useColorScheme";
 export {
   COLOR_SCHEME_DEFAULT_ACTION,
   action,

@@ -1,6 +1,7 @@
 import { Form, useLocation } from "@remix-run/react";
 import type { ReactNode } from "react";
-import { useInversedColorScheme } from "../hooks/useInversedColorScheme";
+
+import { useInversedColorScheme } from "../hooks/useColorScheme";
 import { COLOR_SCHEME_DEFAULT_ACTION } from "../server";
 
 type ToggleColorSchemeFormProps = {
