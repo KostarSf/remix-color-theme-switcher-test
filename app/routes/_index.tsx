@@ -17,11 +17,13 @@ export default function Index() {
   const inversedScheme = useInversedColorScheme();
 
   return (
-    <div className="h-screen bg-white px-12 py-4 dark:bg-slate-900">
-      <h1 className="text-4xl font-bold text-slate-600 dark:text-slate-300">
+    <div className="h-screen bg-white px-12 py-4 transition-colors dark:bg-slate-900">
+      <h1 className="text-4xl font-bold text-slate-600 transition-colors dark:text-slate-300">
         <span className="text-pink-400">Color Theme</span> Switcher
       </h1>
-      <p className="text-xl dark:text-slate-100">Based on cookies</p>
+      <p className="text-xl transition-colors dark:text-slate-100">
+        Based on cookies
+      </p>
 
       <ToggleColorSchemeForm className="mt-12">
         <button
